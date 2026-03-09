@@ -1,0 +1,55 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(135deg, #eee 50%, #252525 50%);
+  color: #252525;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.125);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo h1 {
+  font-size: 6rem;
+  line-height: 1;
+  margin: 0;
+}
+.logoIcon {
+  height: 8rem;
+  width: auto;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 6rem;
+  margin: 0 5% 0;
+  padding: 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.navLinks a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+  align-items: flex-end;
+}
+
+.navLinks a:hover {
+  color: #aaa;
+}
+
+.navLinks .active {
+  color: #ffde3b;
+}

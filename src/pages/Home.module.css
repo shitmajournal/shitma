@@ -1,0 +1,108 @@
+.page {
+    width: 75%;
+    margin: 12.5%;
+    align-items: center;
+}
+
+.twoColumn {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr; 
+  gap: 2.5rem;                    
+  align-items: center;            
+}
+
+/* 左侧文字样式 */
+.leftColumn {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  align-items: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  color: #1a2b3c;
+  border-bottom: 2px solid #e0e6ea;
+  padding-bottom: 0.5rem;
+}
+
+.paragraph {
+  margin: 5%;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+}
+
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.card {
+  background-color: #ffffff;
+  border: none;
+  border-top: 8px solid #ccc;
+  border-radius: 16px;
+  padding: 1.4rem 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.card:hover {
+  background-color: #fcfcfc;
+  border-color: #ffde3b;
+  transform: none;
+  box-shadow: none;
+}
+
+.cardTitle {
+  font-family: 'Georgia', '微软雅黑', serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #d8dee3;
+  padding-bottom: 0.55rem;
+}
+
+.cardList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cardList li {
+  padding: 1rem 0;
+}
+
+
+.cardList li:last-child {
+  border-bottom: none;
+}
+
+
+.cardList a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.cardList a:hover {
+  text-decoration: underline;
+}
+
+/* 响应式：小屏幕时堆叠 */
+@media (max-width: 768px) {
+  .twoColumn {
+    grid-template-columns: 1fr;  /* 单列 */
+    gap: 1.5rem;
+  }
+
+  .page {
+    padding: 1rem;
+  }
+}
