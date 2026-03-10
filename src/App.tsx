@@ -4,7 +4,7 @@ import './App.css';
 import Header from './components/Header';
 import Home from './pages/Home'
 import Recent from './pages/Recent'
-// import Submit from './pages/Submit'
+import Submit from './pages/Submit'
 // import About from './pages/About'
 
 
@@ -18,7 +18,7 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/recent" element={<Recent />} />
-        <Route path="/submit" element={<Recent />} />
+        <Route path="/submit" element={<Submit />} />
         <Route path="/about" element={<Recent />} />
       </Routes>
     </main>
