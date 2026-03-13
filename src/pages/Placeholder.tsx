@@ -1,12 +1,12 @@
 import React from 'react';
-import styles from './Recent.module.css';
+import styles from './Placeholder.module.css';
 
 
 
-const Recent: React.FC = () => {
+const Placeholder: React.FC = () => {
     return <div className={styles.page}>
         <div className={styles.flow}>
-            <h1 className={styles.title}>RECENT</h1>
+            <h1 className={styles.title}>PLACEHOLDER</h1>
             <p className={styles.paragraph}>
             暂无内容。只需等待……
           </p>
@@ -16,4 +16,4 @@ const Recent: React.FC = () => {
 }
 
 
-export default Recent;
+export default Placeholder;

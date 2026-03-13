@@ -1,21 +1,24 @@
 .page {
-    width: 75%;
-    margin: 12.5%;
-    align-items: center;
+  display: flex;
+  width: 100%;
+  margin-top: 8rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .twoColumn {
-  width: 100%;
+  width: 75%;
+  margin-top: 2rem;
   display: grid;
   grid-template-columns: 2fr 1fr; 
-  gap: 2.5rem;                    
+  gap: 2.5%;                    
   align-items: center;            
 }
 
 /* 左侧文字样式 */
 .leftColumn {
   background-color: #ffffff;
-  padding: 1.5rem;
+  padding: 0 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   align-items: center;
@@ -56,12 +59,10 @@
 .card:hover {
   background-color: #fcfcfc;
   border-color: #ffde3b;
-  transform: none;
   box-shadow: none;
 }
 
 .cardTitle {
-  font-family: 'Georgia', '微软雅黑', serif;
   font-size: 1.25rem;
   font-weight: 600;
   letter-spacing: 0.02em;
@@ -95,10 +96,9 @@
   text-decoration: underline;
 }
 
-/* 响应式：小屏幕时堆叠 */
 @media (max-width: 768px) {
   .twoColumn {
-    grid-template-columns: 1fr;  /* 单列 */
+    grid-template-columns: 1fr;
     gap: 1.5rem;
   }
 

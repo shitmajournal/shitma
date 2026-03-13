@@ -5,6 +5,7 @@ import styles from './Home.module.css';
 const Home: React.FC = () => {
   return (
     <div className={styles.page}>
+      
       <div className={styles.twoColumn}>
 
         <section className={styles.leftColumn}>

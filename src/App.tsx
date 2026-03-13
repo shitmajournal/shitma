@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import './App.css';
 import Header from './components/Header';
+import Placeholder from './pages/Placeholder';
 import Home from './pages/Home'
-import Recent from './pages/Recent'
+// import Recent from './pages/Recent'
 import Submit from './pages/Submit'
 // import About from './pages/About'
 
@@ -17,9 +17,9 @@ const App: React.FC = () => {
     <main className="container">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/recent" element={<Recent />} />
+        <Route path="/recent" element={<Placeholder />} />
         <Route path="/submit" element={<Submit />} />
-        <Route path="/about" element={<Recent />} />
+        <Route path="/about" element={<Placeholder />} />
       </Routes>
     </main>
       
